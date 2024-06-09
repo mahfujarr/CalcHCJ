@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
+@media screen and (max-width: 740px) {
+  body {
+    margin-top: 30px;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  margin: auto;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
