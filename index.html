@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Calc">
+        <input type="text" aria-readonly="true" placeholder="0" id="display">
+        <div>
+            <button onclick="AC()" class="acBtn">AC</button>
+            <button onclick="DEL()" class="delBtn">DEL</button>
+            <button onclick="buttonID('%')">%</button>
+            <button onclick="buttonID('/')">/</button>
+        </div>
+        <div>
+            <button onclick="buttonID('7')">7</button>
+            <button onclick="buttonID('8')">8</button>
+            <button onclick="buttonID('9')">9</button>
+            <button onclick="buttonID('*')">*</button>
+        </div>
+        <div>
+            <button onclick="buttonID('4')">4</button>
+            <button onclick="buttonID('5')">5</button>
+            <button onclick="buttonID('6')">6</button>
+            <button onclick="buttonID('-')">-</button>
+        </div>
+        <div>
+            <button onclick="buttonID('1')">1</button>
+            <button onclick="buttonID('2')">2</button>
+            <button onclick="buttonID('3')">3</button>
+            <button onclick="buttonID('+')">+</button>
+        </div>
+        <div>
+            <button onclick="buttonID('00')">00</button>
+            <button onclick="buttonID('0')">0</button>
+            <button onclick="buttonID('.')">.</button>
+            <button onclick="Equal()" class="equalBtn">=</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">My first Frontend project
+            </text>
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
